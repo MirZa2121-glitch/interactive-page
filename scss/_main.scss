@@ -1,0 +1,100 @@
+@import "_mixin";
+@import "_varriables";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-color: $first-color;
+}
+
+.intro {
+    &__wrapper {
+        padding-top: 120px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__text {
+        width: 550px;
+    }
+
+    &__title {
+        font-size: $seven-font-size;
+        font-weight: 400;
+        line-height: 70px;
+        color: $third-color;
+    }
+
+    &__description {
+        font-family: 'Open Sans', sans-serif;
+        font-size: $default-font-size;
+        font-weight: 200;
+        line-height: 33px;
+        color: $four-color;
+    }
+
+}
+
+
+.btn-box {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn1 {
+    width: 247px;
+    height: 60px;
+    font-weight: 600;
+    border-radius: 56px;
+    transition-duration: .3s;
+    font-family: 'Open Sans', sans-serif;
+    @include btn-element;
+    font-size: $second-font-size;
+    background-color: $second-color;
+    color: $first-color;
+    &:hover {
+        border: 1px solid $second-color;
+        background-color: transparent;
+        color: $second-color;
+    }
+}
+
+.btn2 {
+    width: 187px;
+    height: 60px;
+    border-radius: 56px;
+    font-size: $second-font-size;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    transition-duration: .3s;
+    @include btn-element;
+    border: 1px solid $third-color;
+    color: $third-color;
+    &:hover {
+        background-color: $third-color;
+        color: $first-color;
+    }
+}
+
+.hero-ground {
+    width: 500px;
+    height: 500px;
+    padding-top: 130px;
+    background-image: url(../img/details/hero\ graphics.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.sponsore-box {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 50px;
+}
