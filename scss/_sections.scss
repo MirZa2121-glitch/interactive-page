@@ -1,2 +1,196 @@
 @import "_mixin";
 @import "_varriables";
+
+.container {
+    @include container;
+}
+
+.services {
+    &__wrapper {
+        padding: 80px 0;
+    }
+
+    &__inner {
+        padding: 40px 0;
+    }
+
+    &__card {
+        @include flex-inner;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__text {
+        width: 850px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__subtitle {
+        font-size: $second-font-size;
+        font-weight: 400;
+        color: $five-color;
+    }
+
+    &__title {
+        font-size: $seven-font-size;
+        font-weight: 400;
+        color: #000;
+    }
+}
+
+.card {
+    width: 300px;
+    transition: transform .2s ease-in;
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    .card-hero-1 {
+        padding: 200px 0;
+        background-image: url(../img/details/Rectangle.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .card-hero-2 {
+        padding: 200px 0;
+        background-image: url(../img/details/Rectangle-2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .card-hero-3 {
+        padding: 200px 0;
+        background-image: url(../img/details/Rectangle-3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &__title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: $third-font-size;
+        font-weight: 400;
+        color: #000;
+    }
+
+    &__description {
+        font-family: 'Open Sans', sans-serif;
+        font-size: $second-font-size;
+        font-weight: 400;
+        line-height: 33px;
+        color: $five-color;
+    }
+
+    &__btn {
+        font-family: 'Open Sans', sans-serif;
+        font-size: $second-font-size;
+        font-weight: bold;
+        color: $first-color;
+        border-bottom: 1px solid $first-color;
+    }
+}
+
+.customer {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        width: 500px;
+        padding-bottom: 30px;
+        font-size: $five-font-size;
+        font-weight: 400;
+        line-height: 60px;
+        color: #000;
+    }
+
+    &__description {
+        font-size: $second-font-size;
+        font-weight: 300;
+        color: #000;
+    }
+
+    &__btn {
+        width: 210px;
+        height: 60px;
+        margin: 50px 0;
+        border-radius: 56px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: $second-font-size;
+        font-weight: 400;
+        transition-duration: .3s;
+        @include btn-element;
+        background-color: $six-color;
+        color: $four-color;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $six-color;
+            color: $six-color;
+        }
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        transition: transform .2s ease-in;
+        gap: 30px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .check-box {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        @include btn-element;
+        background-color: $six-color;
+    }
+}
+
+.connections {
+    padding: 100px 0;
+
+    &__inner {
+        @include flex-inner;
+    }
+
+    &__title {
+        width: 500px;
+        padding-bottom: 30px;
+        font-size: $five-font-size;
+        font-weight: 400;
+        line-height: 60px;
+        color: #000;
+    }
+
+    &__description {
+        width: 500px;
+        height: 68px;
+        border-radius: 5px;
+        margin-top: 30px;
+        font-weight: 500;
+        transition-duration: .3s;
+        padding: 0 20px;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        transition: transform 0.2s ease-in;
+        gap: 20px;
+        border: 1px solid $first-color;
+        box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.2);
+        color: $first-color;
+        &:hover {
+            transform: scale(1.1);
+            background-color: $six-color;
+            color: $four-color;
+        }
+    }
+}

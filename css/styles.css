@@ -17,6 +17,7 @@
           backdrop-filter: blur(10px);
 }
 .header__inner {
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,13 +71,12 @@
   color: #0A2640;
 }
 
-body {
+.intro {
   background-color: #0A2640;
 }
-
 .intro__wrapper {
   padding-top: 120px;
-  margin-top: 10px;
+  margin-top: -10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -162,4 +162,187 @@ body {
   justify-content: center;
   margin: 0 auto;
   gap: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.services__wrapper {
+  padding: 80px 0;
+}
+.services__inner {
+  padding: 40px 0;
+}
+.services__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.services__text {
+  width: 850px;
+  text-align: center;
+  margin: 0 auto;
+}
+.services__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  color: #777777;
+}
+.services__title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #000;
+}
+
+.card {
+  width: 300px;
+  transition: transform 0.2s ease-in;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card .card-hero-1 {
+  padding: 200px 0;
+  background-image: url(../img/details/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.card .card-hero-2 {
+  padding: 200px 0;
+  background-image: url(../img/details/Rectangle-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.card .card-hero-3 {
+  padding: 200px 0;
+  background-image: url(../img/details/Rectangle-3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.card__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+.card__description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #777777;
+}
+.card__btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0A2640;
+  border-bottom: 1px solid #0A2640;
+}
+
+.customer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.customer__title {
+  width: 500px;
+  padding-bottom: 30px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #000;
+}
+.customer__description {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+}
+.customer__btn {
+  width: 210px;
+  height: 60px;
+  margin: 50px 0;
+  border-radius: 56px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0A2640;
+  color: #F1F1F1;
+}
+.customer__btn:hover {
+  background-color: transparent;
+  border: 1px solid #0A2640;
+  color: #0A2640;
+}
+.customer__text {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease-in;
+  gap: 30px;
+}
+.customer__text:hover {
+  transform: scale(1.1);
+}
+.customer .check-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0A2640;
+}
+
+.connections {
+  padding: 100px 0;
+}
+.connections__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.connections__title {
+  width: 500px;
+  padding-bottom: 30px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #000;
+}
+.connections__description {
+  width: 500px;
+  height: 68px;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-weight: 500;
+  transition-duration: 0.3s;
+  padding: 0 20px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  transition: transform 0.2s ease-in;
+  gap: 20px;
+  border: 1px solid #0A2640;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #0A2640;
+}
+.connections__description:hover {
+  transform: scale(1.1);
+  background-color: #0A2640;
+  color: #F1F1F1;
 }

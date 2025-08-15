@@ -14,10 +14,10 @@ export function Header() {
     $container.innerHTML = `
         <div class="header__wrapper">
             <div class="header__inner">
-                <a class="header__logo" href="#home">
+                <div class="header__logo" href="#home">
                     <img src="./img/logo/Logo.svg" alt="">
-                    <p class="logo">${$text[0].text}</p>
-                </a>
+                    <a class="logo" href="#home">${$text[0].text}</a>
+                </div>
                 ${Nav()}
             </div>
         </div>
